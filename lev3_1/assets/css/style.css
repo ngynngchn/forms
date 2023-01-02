@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: grey;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+form {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 2px 3px 15px 2px grey;
+  margin: 5vh 8vw;
+  position: relative;
+}
+
+h1,
+legend {
+  font-family: "Roboto Slab";
+}
+
+h1,
+p {
+  color: white;
+  margin: 1vh;
+}
+
+form header {
+  background-color: palevioletred;
+  padding: 4vh 4vw 2vh;
+  border-radius: 15px 15px 0 0;
+}
+
+form section {
+  padding: 4vh 4vw 2vh;
+  width: 100%;
+}
+
+fieldset {
+  all: unset;
+  width: 100%;
+}
+
+fieldset legend {
+  color: palevioletred;
+  font-size: 1.2rem;
+  padding: 1vh 0;
+}
+
+.fieldset1::before {
+  content: "1";
+  padding: 3px 10px;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  background-color: palevioletred;
+  left: -12px;
+}
+.fieldset2::before {
+  content: "2";
+  padding: 3px 10px;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  background-color: palevioletred;
+  left: -12px;
+}
+.fieldset3::before {
+  content: "3";
+  padding: 3px 10px;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  background-color: palevioletred;
+  left: -12px;
+}
+
+fieldset div {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 4vh 4vw;
+}
+
+fieldset div:first-of-type {
+  padding-bottom: 0;
+}
+
+input:not(input[type="checkbox"], input[type="submit"]),
+textarea {
+  display: block;
+  padding: 1vh;
+  margin-top: 1vh;
+  width: 100%;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4vh;
+}
+
+input[type="submit"] {
+  width: initial;
+  padding: 2vh 4vw;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: palevioletred;
+}
+
+input[type="submit"]:hover {
+  background-color: purple;
+}
+
+label[for="terms"] {
+  font-size: 0.7rem;
+}

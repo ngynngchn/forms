@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+section {
+  background-color: #1c272b;
+  width: 500px;
+  margin: 4vw;
+  padding: 3vh 4vw;
+}
+
+/* header */
+
+section header {
+  width: 100%;
+}
+
+.sign-in,
+.log-in {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2vh;
+  width: 49%;
+}
+
+.sign-in {
+  border-right: 3px solid white;
+}
+
+.sign-in:hover,
+.log-in:hover {
+  background-color: rgb(247, 159, 174);
+}
+
+/* Form  */
+
+h1 {
+  text-align: center;
+  margin: 3vh 4vw;
+  font-size: 2rem;
+}
+
+input {
+  background-color: #1c272b;
+  border: 1px solid white;
+  padding: 1vh 1vw;
+  margin-bottom: 2.2vh;
+}
+
+.name input {
+  width: 49%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="submit"] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: pink;
+  padding: 2vh;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+form a {
+  margin: 2vh 0 2.5vh auto;
+  color: pink;
+}

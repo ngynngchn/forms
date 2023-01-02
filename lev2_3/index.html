@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Register form</legend>
+
+        <div>
+          <label for="fname">Name</label>
+          <input type="text" name="fname" id="fname" placeholder="Name" />
+        </div>
+        <div>
+          <label for="lname">Surname</label>
+          <input type="text" name="lname" id="lname" placeholder="Surname" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="choice">
+          <h2>Gender</h2>
+          <label for="gender">Male</label
+          ><input type="radio" name="gender" id="male" checked />
+          <label for="gender">Female</label
+          ><input type="radio" name="gender" id="female" />
+        </div>
+        <div>
+          <label for="picture">Picture</label
+          ><input type="file" name="picture" id="picture" />
+        </div>
+        <div>
+          <h2>Country</h2>
+          <select name="country" id="country">
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+            <option value="france">France</option>
+          </select>
+        </div>
+        <div>
+          <h2>Preferred languages</h2>
+          <select multiple="multiple" name="lang" id="lang">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+            <option value="react">React</option>
+          </select>
+          <p>(To choose more than one use cmd key)</p>
+        </div>
+        <div class="choice">
+          <h2>Field of Activity</h2>
+          <input type="checkbox" name="it" id="it" value="it" />
+          <label for="it">IT</label>
+          <input type="checkbox" name="design" id="design" value="design" />
+          <label for="design">Design</label>
+          <input type="checkbox" name="other" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+
+        <div>
+          <input type="submit" value="Send" />
+          <input type="button" value="Cancel" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
